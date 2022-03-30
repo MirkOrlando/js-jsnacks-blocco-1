@@ -10,7 +10,11 @@ let wordLonger;
 let wordShorter;
 let sameLength = false;
 
-if (word1.length > word2.length) {
+if (word1.includes(" ") || word2.includes(" ")) {
+  alert(
+    "Cortesemente inserire solo una parola per ogni campo! Ricaricare la pagina"
+  );
+} else if (word1.length > word2.length) {
   wordLonger = word1;
   wordShorter = word2;
 } else if (word2.length > word1.length) {
