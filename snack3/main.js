@@ -4,7 +4,7 @@ Il programma stampa la somma di tutti i numeri inseriti.
  */
 
 let numbersList = [];
-let sum;
+let sum = 0;
 
 for (let i = 0; i < 10; i++) {
   numbersList.push(parseInt(prompt("inserisci un numero")));
@@ -12,7 +12,7 @@ for (let i = 0; i < 10; i++) {
 
 for (let i = 0; i < numbersList.length; i++) {
   console.log(numbersList[i]);
-  sum += parseInt(numbersList[i]);
+  sum += numbersList[i];
 }
 
 console.log(sum);
