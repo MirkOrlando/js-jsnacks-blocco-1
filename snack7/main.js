@@ -1,10 +1,7 @@
 /* SNACK 7 
 Stampa le potenze di 2 fino a 1000.*/
+let i = 0;
 
-const base = 2;
-let power;
-
-for (let i = 0; i <= 1000; i++) {
-  power = base ** i;
-  console.log(`Se la è ${base} e l'esponente è ${i} il risultato è ${power}`);
+for (let i = 1; i <= 1000; i = i * 2) {
+  console.log(i);
 }
