@@ -9,7 +9,7 @@ const oddsList = [];
 for (let i = 0; i < 6; i++) {
   const numberUser = parseInt(prompt("inserisci un numero"));
   console.log(numberUser);
-  if (numberUser % 2 !== 0) {
+  if (!isNaN(numberUser) && numberUser % 2 !== 0) {
     oddsList.push(numberUser);
   }
 }
