@@ -10,9 +10,11 @@ let wordLonger;
 let wordShorter;
 let sameLength = false;
 
-/* aggiungere la condizione di verifica per il 
-caso in cui l'utente mandi avanti senza inserire alcun valore */
-if (word1.includes(" ") || word2.includes(" ")) {
+if (word1 === "" || word2 === "") {
+  alert(
+    "Cortesemente inserire almeno una parola per ogni campo! Ricaricare la pagina"
+  );
+} else if (word1.includes(" ") || word2.includes(" ")) {
   alert(
     "Cortesemente inserire solo una parola per ogni campo! Ricaricare la pagina"
   );
