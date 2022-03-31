@@ -7,8 +7,8 @@ const n = 10;
 
 for (let i = 1; i <= n; i++) {
   sum += i;
-  average = sum / n;
   console.log(i);
 }
 
+average = sum / n;
 console.log(sum, average);
